@@ -19,4 +19,7 @@
 	%>
 
 	<%=session.getAttribute("Curso")%>
+
+	<%@ page isErrorPage="true"%>
+	<%=exception%>
 </html>

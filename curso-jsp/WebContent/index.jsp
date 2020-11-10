@@ -33,5 +33,13 @@
 	<%
 		session.setAttribute("Curso", "Atributo de sessão");
 	%>
+
+	</br>
+	<%@ page import="java.util.Date"%>
+	<%="Data de hoje: " + new Date()%>
+
+	</br>
+	<%@ page errorPage="receber-nome.jsp"%>
+	<%="RESULTADO: " + 100 / 2%>
 </body>
 </html>
