@@ -22,4 +22,7 @@
 
 	<%@ page isErrorPage="true"%>
 	<%=exception%>
+	
+	</br>
+	<%@include file="pagina-include.jsp"%>
 </html>

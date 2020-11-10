@@ -41,5 +41,8 @@
 	</br>
 	<%@ page errorPage="receber-nome.jsp"%>
 	<%="RESULTADO: " + 100 / 2%>
+
+	</br>
+	<%@include file="pagina-include.jsp"%>
 </body>
 </html>
