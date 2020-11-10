@@ -12,8 +12,11 @@
 	</p>
 	<%=request.getContextPath()%>
 	</p>
+
+
 	<%
-		response.sendRedirect("https://www.globo.com/");
+		//response.sendRedirect("https://www.globo.com/");
 	%>
-</body>
+
+	<%=session.getAttribute("Curso")%>
 </html>

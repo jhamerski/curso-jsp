@@ -25,8 +25,13 @@
 
 	</br>
 	<%=retorna(8)%>
-	
+
 	</br>
-	<%= application.getInitParameter("estado") %>
+	<%=application.getInitParameter("estado")%>
+
+
+	<%
+		session.setAttribute("Curso", "Atributo de sessão");
+	%>
 </body>
 </html>
