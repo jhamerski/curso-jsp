@@ -1,5 +1,10 @@
+<jsp:useBean id="calcula" class="beans.BeanCursoJsp" scope="page"></jsp:useBean>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,13 +14,14 @@
 <body>
 	<jsp:include page="cabecalho.jsp"></jsp:include>
 
+	<%=calcula.calcula(50)%>
+
 	<h1>Bem vindo ao curso de JSP</h1>
 	<%="Seu sucesso garantido..."%>
 
 	<form action="receber-nome.jsp">
 		<input type="text" id="nome" name="nome"> <input type="submit"
 			value="Enviar">
-
 	</form>
 
 	<%!int count = 2;
@@ -47,9 +53,14 @@
 	</br>
 	<%@include file="pagina-include.jsp"%>
 
+	<%
+		/** 
 	<jsp:forward page="receber-nome.jsp">
 		<jsp:param value="Curso de jsp site de java avancado"
 			name="paramforward" />
 	</jsp:forward>
+	**/
+	%>
+
 </body>
 </html>

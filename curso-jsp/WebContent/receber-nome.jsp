@@ -30,7 +30,7 @@
 
 	<h1>RECEBER NOME</h1>
 	<%=request.getParameter("paramforward")%>
-	
+
 	</br>
 	<jsp:include page="rodape.jsp"></jsp:include>
 </html>
