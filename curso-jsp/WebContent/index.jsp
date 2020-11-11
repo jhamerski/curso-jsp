@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<jsp:include page="cabecalho.jsp"></jsp:include>
+
 	<h1>Bem vindo ao curso de JSP</h1>
 	<%="Seu sucesso garantido..."%>
 
@@ -44,5 +46,10 @@
 
 	</br>
 	<%@include file="pagina-include.jsp"%>
+
+	<jsp:forward page="receber-nome.jsp">
+		<jsp:param value="Curso de jsp site de java avancado"
+			name="paramforward" />
+	</jsp:forward>
 </body>
 </html>

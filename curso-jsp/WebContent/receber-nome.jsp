@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<jsp:include page="cabecalho.jsp"></jsp:include>
+
 	<%="Nome recebido: " + request.getParameter("nome")%>
 
 	</p>
@@ -22,7 +24,13 @@
 
 	<%@ page isErrorPage="true"%>
 	<%=exception%>
-	
+
 	</br>
 	<%@include file="pagina-include.jsp"%>
+
+	<h1>RECEBER NOME</h1>
+	<%=request.getParameter("paramforward")%>
+	
+	</br>
+	<jsp:include page="rodape.jsp"></jsp:include>
 </html>
