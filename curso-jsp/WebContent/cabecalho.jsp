@@ -1,5 +1,5 @@
 <jsp:useBean id="calcula" class="beans.BeanCursoJsp"
-	type="beans.BeanCursoJsp" scope="page"/>
+	type="beans.BeanCursoJsp" scope="page" />
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -11,10 +11,12 @@
 </head>
 <body>
 	<jsp:setProperty property="*" name="calcula" />
-	<br />
-	<jsp:getProperty property="nome" name="calcula" />
-	<br />
-	<jsp:getProperty property="ano" name="calcula" />
+	<h3>CABECALHO</h3>
+	Nome : ${param.nome}
+	<br /> 
+	Ano : ${param.ano}
 
+	<br /> 
+	${sessionScope.materia}
 </body>
 </html>

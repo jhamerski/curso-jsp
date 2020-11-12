@@ -1,5 +1,5 @@
 <jsp:useBean id="calcula" class="beans.BeanCursoJsp"
-	type="beans.BeanCursoJsp" scope="page"/>
+	type="beans.BeanCursoJsp" scope="page" />
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -14,15 +14,16 @@
 	<%=calcula.calcula(50)%>
 
 	<jsp:setProperty property="*" name="calcula" />
-	
-	<br/>
+
+	<br />
 	<form action="cabecalho.jsp" method="post">
-		<input type="text" id="nome" name="nome">
-		<br/>
-		<input type="text" id="ano" name="ano">
-		<br/>
-		<input type="submit" value="Enviar">
-	</form> 
+		<input type="text" id="nome" name="nome"> <br /> <input
+			type="text" id="ano" name="ano"> <br /> <input type="submit"
+			value="Enviar">
+	</form>
+
+
+	<% session.setAttribute("materia", "JAVA WEB COM INTERAÇÃO"); %>
 
 </body>
 </html>
