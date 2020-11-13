@@ -2,28 +2,30 @@ package beans;
 
 public class BeanCursoJsp {
 
-	private String nome;
+	private String login;
 
-	private String ano;
-
-	public String getNome() {
-		return nome;
+	private String senha;
+	
+	public boolean validarLoginSenha(String login, String senha) {
+		if (login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")) {
+			return true;
+		}return false;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public String getLogin() {
+		return login;
 	}
 
-	public String getAno() {
-		return ano;
+	public void setLogin(String login) {
+		this.login = login;
 	}
 
-	public void setAno(String ano) {
-		this.ano = ano;
+	public String getSenha() {
+		return senha;
 	}
 
-	public int calcula(int n) {
-		return n * 500;
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 
 }

@@ -1,4 +1,4 @@
-<jsp:useBean id="calcula" class="beans.BeanCursoJsp"
+<jsp:useBean id="validarLoginSenha" class="beans.BeanCursoJsp"
 	type="beans.BeanCursoJsp" scope="page" />
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -10,16 +10,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<%=calcula.calcula(50)%>
-
-	<jsp:setProperty property="*" name="calcula" />
-
 	<br />
-	<form action="cabecalho.jsp" method="post">
-		<input type="text" id="nome" name="nome"> <br /> <input
-			type="text" id="ano" name="ano"> <br /> <input type="submit"
-			value="Enviar">
+	<form action="LoginServlet" method="post">
+	    Login:
+		<input type="text" id="login" name="login"> <br /> 
+		<br />
+		Senha:
+		<input type="password" id="senha" name="senha"> <br /> 
+		<br />
+		<input type="submit" value="Acessar">
 	</form>
 
 

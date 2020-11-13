@@ -1,4 +1,4 @@
-<jsp:useBean id="calcula" class="beans.BeanCursoJsp"
+<jsp:useBean id="validarLoginSenha" class="beans.BeanCursoJsp"
 	type="beans.BeanCursoJsp" scope="page" />
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -10,13 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:setProperty property="*" name="calcula" />
-	<h3>CABECALHO</h3>
-	Nome : ${param.nome}
-	<br /> 
-	Ano : ${param.ano}
-
-	<br /> 
-	${sessionScope.materia}
+	<jsp:setProperty property="*" name="validarLoginSenha" />
+	<h3>Seja bem vindo ao sistema em JSP.</h3>
 </body>
 </html>
